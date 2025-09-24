@@ -1,0 +1,18 @@
+<resources>
+    <!-- Pastilla del item activo -->
+    <style name="Widget.App.BottomNav.ActiveIndicator">
+        <item name="android:width">64dp</item>
+        <item name="android:height">40dp</item>
+        <item name="android:color">#043F30</item> <!-- verde -->
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+    </style>
+
+    <!-- Estilo completo para la BottomNavigationView -->
+    <style name="Widget.App.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/nav_item_tint</item>
+        <item name="itemTextColor">@color/nav_item_tint</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.App.BottomNav.ActiveIndicator</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+</resources>

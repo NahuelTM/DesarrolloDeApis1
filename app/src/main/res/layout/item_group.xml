@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginTop="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#f8f8f8"
+    app:strokeColor="#e4e4e4"
+    app:strokeWidth="1dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:paddingTop="41dp"
+        android:paddingBottom="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Avatar / ícono redondo 48 -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgGroup"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/app_name"
+            android:padding="12dp"
+            android:backgroundTint="#008994"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            android:background="@drawable/bg_circle_solid"
+            app:srcCompat="@drawable/ic_group_24"
+            app:tint="#043f30" />
+
+        <!-- Centro: títulos -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGroupTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viaje a Brasil 2026"
+                android:textColor="#3a3a3a"
+                android:textSize="16sp"
+                android:fontFamily="@font/geist"
+                android:fontWeight="600" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_users_12"
+                    android:tint="#636363"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tvGroupMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ana, Carlos, María"
+                    android:textColor="#636363"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/geist"
+                    android:fontWeight="400" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Derecha: monto + etiqueta -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGroupAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+$450.50"
+                android:textColor="#499537"
+                android:textSize="18sp"
+                android:fontFamily="@font/geist"
+                android:fontWeight="700" />
+
+            <TextView
+                android:id="@+id/tvGroupTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Te deben"
+                android:textColor="#636363"
+                android:textSize="12sp"
+                android:fontFamily="@font/geist"
+                android:fontWeight="400" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

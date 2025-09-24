@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvGroupsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/geist"
+            android:fontWeight="600"
+            android:text="Tus grupos"
+            android:textColor="#3a3a3a"
+            android:textSize="18sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipActivos"
+            style="@style/Widget.Material3.Chip.Assist.Elevated"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="3 activos"
+            android:textColor="#3a3a3a"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipStrokeColor="#e4e4e4"
+            app:chipStrokeWidth="1dp" />
+    </LinearLayout>
+
+    <!-- Lista -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGroups"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="12dp"
+        android:overScrollMode="never"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/item_group"
+        tools:itemCount="3"
+        />
+</LinearLayout>

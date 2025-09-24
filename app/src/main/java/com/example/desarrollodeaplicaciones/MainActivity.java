@@ -1,6 +1,9 @@
 package com.example.desarrollodeaplicaciones;
 
 import android.os.Bundle;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import java.util.Arrays;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +16,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        RecyclerView rv = findViewById(R.id.rvGroups);
+        rv.setLayoutManager(new LinearLayoutManager(this));
+        rv.setAdapter(new GroupsAdapter(Arrays.asList(
+                new Group("Viaje a Brasil 2026","Ana, Carlos, María", 450.50, false),
+                new Group("Asado con amigos","Pedro, Luis, Sofía",   -312.00, false),
+                new Group("Viaje en auto","Carmen, Diego",            89.75, true)
+        )));
     }
+
 }

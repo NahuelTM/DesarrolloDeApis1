@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F1EF">
+
+    <!-- Contenedor central (equivale a Frame "Container" de Figma) -->
+    <LinearLayout
+        android:id="@+id/llCenter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnGo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <!-- Círculo con check (Overlay + Vector) -->
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_success_circle" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_check_24"
+                android:tint="#05DF72"/>
+        </FrameLayout>
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Contraseña restablecida!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#043F30"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"/>
+
+        <!-- Párrafo -->
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu contraseña ha sido restablecida correctamente.\nYa puedes iniciar sesión con tu nueva contraseña."
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#83938F"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Botón inferior (Frame "Button") -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Ir a iniciar sesión"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:cornerRadius="10dp"
+        app:backgroundTint="#043F30"
+        app:iconPadding="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:elevation="2dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

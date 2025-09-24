@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <!-- Figma: fill color #0d542b con 20% opacidad -->
+    <solid android:color="#330D542B"/>
+</shape>
