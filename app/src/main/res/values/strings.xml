@@ -10,4 +10,16 @@
     <string name="continue_with_google">Continuar con Google</string>
     <string name="dont_have_account">¿No tienes cuenta? </string>
     <string name="create_account">Crear cuenta</string>
+    <string name="reset_title">Restablecer contraseña</string>
+    <string name="reset_subtitle">Ingresa el código y tu nueva contraseña</string>
+    <string name="reset_section">Código de verificación y nueva contraseña</string>
+
+    <string name="label_code">Código de verificación</string>
+    <string name="label_new_password">Nueva contraseña</string>
+    <string name="label_confirm_password">Confirmar nueva contraseña</string>
+
+    <string name="hint_code">123456</string>
+    <string name="hint_password">•••••••</string>
+
+    <string name="btn_reset_password">Restablecer contraseña</string>
 </resources>
