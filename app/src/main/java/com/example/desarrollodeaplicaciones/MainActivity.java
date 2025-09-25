@@ -4,11 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import java.util.Arrays;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         ((TextView) g3.findViewById(R.id.tvGroupAmount)).setText("$89.75");
 
 
-                RecyclerView rv = findViewById(R.id.rvGroups);
+        RecyclerView rv = findViewById(R.id.rvGroups);
         if (rv != null) {
             rv.setLayoutManager(new LinearLayoutManager(this));
 
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottom.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
-            if (id == R.id.nav_home) return true; // ya estás
+            if (id == R.id.nav_home) return true;
             if (id == R.id.nav_expenses) {
                 startActivity(new Intent(this, ExpensesActivity.class));
                 overridePendingTransition(0,0);

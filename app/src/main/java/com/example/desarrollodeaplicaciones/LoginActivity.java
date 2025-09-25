@@ -12,9 +12,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
         MaterialButton btnLogin = findViewById(R.id.btnLogin);
-
 
         btnLogin.setOnClickListener(v -> {
             Intent intent = new Intent(this, MainActivity.class);

@@ -8,7 +8,7 @@
     android:background="#E8F1EF"
     tools:context=".MainActivity">
 
-    <!-- HEADER (85dp) -->
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/header"
         android:layout_width="0dp"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Padding 24/16 como figma -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -33,7 +33,6 @@
             android:paddingBottom="17dp"
             android:gravity="center_vertical">
 
-            <!-- Columna izquierda: texto + monto + chip -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -81,7 +80,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Botón opciones -->
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnOptions"
                 style="@style/Widget.Material3.Button.IconButton"
@@ -91,7 +90,7 @@
                 app:iconTint="#3A3A3A"
                 app:backgroundTint="@android:color/transparent" />
 
-            <!-- Avatar 40 -->
+
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imgAvatar"
                 android:layout_width="40dp"
@@ -123,7 +122,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- 🔹 Encabezado "Tus grupos" -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -189,7 +188,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- FAB (+) -->
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
         android:layout_width="56dp"
