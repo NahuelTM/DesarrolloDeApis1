@@ -103,19 +103,19 @@
     </com.google.android.material.appbar.MaterialToolbar>
 
 
-
-
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/header"
-        app:layout_constraintBottom_toTopOf="@id/bottomBar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:paddingStart="8dp"
-        android:paddingEnd="8dp"
         android:paddingTop="8dp"
-        android:paddingBottom="8dp">
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,10 +126,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="12dp"
                 android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
+                android:layout_marginBottom="12dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -139,9 +139,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:fontFamily="@font/geist"
-                    android:textFontWeight="600"
                     android:text="Tus grupos"
                     android:textColor="#3a3a3a"
+                    android:textFontWeight="600"
                     android:textSize="18sp" />
 
                 <com.google.android.material.chip.Chip
@@ -160,19 +160,18 @@
 
             <include
                 android:id="@+id/incGroup1"
-                layout="@layout/item_group"/>
+                layout="@layout/item_group" />
 
             <include
                 android:id="@+id/incGroup2"
-                layout="@layout/item_group_2"/>
+                layout="@layout/item_group_2" />
 
             <include
                 android:id="@+id/incGroup3"
-                layout="@layout/item_group_3"/>
+                layout="@layout/item_group_3" />
 
         </LinearLayout>
     </ScrollView>
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomBar"
@@ -198,7 +197,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:backgroundTint="#043F30"
-        app:srcCompat="@drawable/ic_add_16"
+        app:srcCompat="@drawable/ic_add"
         app:tint="@android:color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

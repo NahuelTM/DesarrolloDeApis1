@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
                     new Group("Viaje en auto","Carmen, Diego",            89.75, true)
             )));
         }
+
+
+
         BottomNavigationView bottom = findViewById(R.id.bottomBar);
         bottom.setSelectedItemId(R.id.nav_home);  // resalta "Inicio"
 

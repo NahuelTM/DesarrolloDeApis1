@@ -26,9 +26,10 @@
             android:id="@+id/imgGroup"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:padding="12dp"
+            android:padding="5dp"
             android:background="@drawable/bg_circle_solid"
-            android:backgroundTint="#008994"
+            android:src="@drawable/ic_food"
+            android:backgroundTint="#3400958A"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
 
             app:tint="#043f30" />
@@ -63,7 +64,7 @@
                 <ImageView
                     android:layout_width="12dp"
                     android:layout_height="12dp"
-
+                    android:src="@drawable/ic_empty_groups_40"
                     tools:ignore="ContentDescription"/>
                 <!--  android:src="@drawable/ic_users_12"
                  android:tint="#636363" -->
@@ -109,7 +110,7 @@
                 android:textColor="#636363"
                 android:textSize="12sp"
                 android:fontFamily="@font/geist"
-                tools:text="Te deben"/>
+                tools:text="Debes"/>
         </LinearLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -26,9 +26,10 @@
             android:id="@+id/imgGroup"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:padding="12dp"
+            android:padding="5dp"
             android:background="@drawable/bg_circle_solid"
-            android:backgroundTint="#008994"
+            android:src="@drawable/ic_car"
+            android:backgroundTint="#3400958A"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
 
             app:tint="#043f30" />
@@ -63,7 +64,7 @@
                 <ImageView
                     android:layout_width="12dp"
                     android:layout_height="12dp"
-
+                    android:src="@drawable/ic_empty_groups_40"
                     tools:ignore="ContentDescription"/>
                 <!--  android:src="@drawable/ic_users_12"
                  android:tint="#636363" -->
