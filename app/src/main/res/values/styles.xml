@@ -15,4 +15,7 @@
         <item name="itemRippleColor">@android:color/transparent</item>
         <item name="labelVisibilityMode">labeled</item>
     </style>
+
+    <!-- Alias para que no rompa cuando uses @style/Widget.App.BottomNav -->
+    <style name="Widget.App.BottomNav" parent="@style/Widget.App.BottomNavigation" />
 </resources>

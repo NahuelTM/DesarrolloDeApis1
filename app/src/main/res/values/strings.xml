@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Desarrollo De Aplicaciones</string>
-    <string name="app_title_splitwise"> SplitWise</string>
+    <string name="app_title_splitwise"> Splitty</string>
     <string name="login_subtitle">Inicia sesión en tu cuenta</string>
     <string name="email">Correo electrónico</string>
     <string name="password">Contraseña</string>

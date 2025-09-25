@@ -32,15 +32,24 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.VH> {
         return new VH(v);
     }
 
-    @Override public void onBindViewHolder(@NonNull VH h,int i){
-        Group g=data.get(i);
+    public void onBindViewHolder(@NonNull VH h,int i){
+        Group g = data.get(i);
+
+        // log temporal para verificar que llega el dato correcto
+        android.util.Log.d("GA","bind pos="+i+" title="+g.title+" amount="+g.amount);
+
         h.title.setText(g.title);
         h.members.setText(g.members);
-        String sign=g.amount>=0?"+":"-";
-        h.amount.setText(String.format(Locale.getDefault(),"%s$%.2f",sign,Math.abs(g.amount)));
-        if(g.amount>=0){ h.amount.setTextColor(Color.parseColor("#499537")); h.tag.setText("Te deben"); }
-        else { h.amount.setTextColor(Color.parseColor("#D40924")); h.tag.setText("Debes"); }
-    }
+        String sign = g.amount >= 0 ? "+" : "-";
+        h.amount.setText(String.format(Locale.getDefault(), "%s$%.2f", sign, Math.abs(g.amount)));
 
+        if(g.amount >= 0){
+            h.amount.setTextColor(Color.parseColor("#499537"));
+            h.tag.setText("Te deben");
+        } else {
+            h.amount.setTextColor(Color.parseColor("#D40924"));
+            h.tag.setText("Debes");
+        }
+    }
     @Override public int getItemCount(){ return data.size(); }
 }

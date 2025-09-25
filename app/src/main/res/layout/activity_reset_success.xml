@@ -30,9 +30,10 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_check_24"
-                android:tint="#05DF72"/>
+                android:layout_gravity="center"/>
+            <!--   android:src="@drawable/ic_check_24"
+                android:tint="#05DF72"-->
+
         </FrameLayout>
 
         <!-- Título -->

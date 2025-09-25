@@ -151,7 +151,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnStart"
-                style="@style/Widget.Material3.Button.Filled"
+                style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="6dp"

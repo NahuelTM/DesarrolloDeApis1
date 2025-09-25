@@ -1,116 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="12dp"
     app:cardCornerRadius="16dp"
     app:cardUseCompatPadding="true"
-    app:cardBackgroundColor="#f8f8f8"
-    app:strokeColor="#e4e4e4"
+    app:cardBackgroundColor="#F8F8F8"
+    app:strokeColor="#E4E4E4"
     app:strokeWidth="1dp"
     app:cardElevation="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="112dp"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingStart="17dp"
-        android:paddingEnd="17dp"
         android:paddingTop="16dp"
+        android:paddingEnd="17dp"
         android:paddingBottom="16dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imgGroup"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:padding="12dp"
             android:background="@drawable/bg_circle_solid"
             android:backgroundTint="#008994"
+            android:padding="12dp"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
 
-            app:tint="#043f30" />
-            <!-- app:srcCompat="@drawable/ic_group_24" -->
+            app:tint="#008994" />
+        <!-- app:srcCompat="@drawable/ic_utensils_24" -->
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginStart="16dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvGroupTitle"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#3a3a3a"
-                android:textSize="16sp"
                 android:fontFamily="@font/geist"
-                android:fontWeight="600"
-                android:maxLines="1"
-                android:ellipsize="end"
-                tools:text="Viaje a Brasil 2026"/>
+                android:text="Carlos te debe $75.50"
+                android:textColor="#3A3A3A"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
                 android:gravity="center_vertical"
-                android:layout_marginTop="4dp">
-
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-
-                    tools:ignore="ContentDescription"/>
-               <!--  android:src="@drawable/ic_users_12"
-                android:tint="#636363" -->
-
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tvGroupMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/geist"
+                    android:text="Asado con amigos"
+                    android:textColor="#636363"
+                    android:textSize="12sp" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:textColor="#636363"
-                    android:textSize="14sp"
                     android:fontFamily="@font/geist"
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    tools:text="Ana, Carlos, María"/>
+                    android:text="•"
+                    android:textColor="#636363"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/geist"
+                    android:text="13/1/2024"
+                    android:textColor="#636363"
+                    android:textSize="12sp" />
             </LinearLayout>
+
+            <!-- sin botón -->
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:gravity="end"
-            android:minWidth="72dp"
-            android:paddingStart="8dp">
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvGroupAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
                 android:fontFamily="@font/geist"
-                android:fontWeight="700"
-                android:textColor="#499537"
-                android:minEms="5"
-                android:textAlignment="viewEnd"
-                tools:text="+$450.50"/>
+                android:text="+$75.50"
+                android:textColor="#0B8C3A"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/tvGroupTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/geist"
+                android:text="Pendiente"
                 android:textColor="#636363"
-                android:textSize="12sp"
-                android:fontFamily="@font/geist"
-                tools:text="Te deben"/>
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

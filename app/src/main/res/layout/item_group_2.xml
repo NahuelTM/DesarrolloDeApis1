@@ -32,7 +32,7 @@
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
 
             app:tint="#043f30" />
-            <!-- app:srcCompat="@drawable/ic_group_24" -->
+        <!-- app:srcCompat="@drawable/ic_group_24" -->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -51,7 +51,7 @@
                 android:fontWeight="600"
                 android:maxLines="1"
                 android:ellipsize="end"
-                tools:text="Viaje a Brasil 2026"/>
+                tools:text="Asado con amigos"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -65,9 +65,8 @@
                     android:layout_height="12dp"
 
                     tools:ignore="ContentDescription"/>
-               <!--  android:src="@drawable/ic_users_12"
-                android:tint="#636363" -->
-
+                <!--  android:src="@drawable/ic_users_12"
+                 android:tint="#636363" -->
 
                 <TextView
                     android:id="@+id/tvGroupMembers"
@@ -79,7 +78,7 @@
                     android:fontFamily="@font/geist"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    tools:text="Ana, Carlos, María"/>
+                    tools:text="Pedro, Luis, Sofía"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -98,10 +97,10 @@
                 android:textSize="18sp"
                 android:fontFamily="@font/geist"
                 android:fontWeight="700"
-                android:textColor="#499537"
+                android:textColor="#F44336"
                 android:minEms="5"
                 android:textAlignment="viewEnd"
-                tools:text="+$450.50"/>
+                tools:text="-$312.00"/>
 
             <TextView
                 android:id="@+id/tvGroupTag"
