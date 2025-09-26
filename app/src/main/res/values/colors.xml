@@ -8,6 +8,7 @@
 
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#555555</color>
+    <color name="ic_logo_background">#000000</color>
 
     <color name="chip_bg_translucent">#1ACB7800</color>
 

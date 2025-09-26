@@ -31,13 +31,13 @@
 
             <ImageView
                 android:id="@+id/imgTop"
-                android:layout_width="80dp"
+                android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:adjustViewBounds="true"
+                android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/ic_receipt_16"
-                android:src="@android:color/transparent"
-                android:contentDescription="@null" />
+                app:srcCompat="@mipmap/ic_logo_foreground" />
+
         </androidx.cardview.widget.CardView>
 
         <!-- Títulos -->
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_title_splitwise"
-            android:textColor="#212121"
+            android:textColor="#2D562D"
             android:textStyle="bold"
             android:textSize="30sp"
             android:gravity="center"
@@ -203,7 +203,7 @@
                     app:cornerRadius="10dp"
                     app:strokeColor="#D7E0DE"
                     app:strokeWidth="1dp"
-                    app:icon="@drawable/ic_google_24"
+                    app:icon="@drawable/ic_google_logo"
                     app:iconGravity="textStart"
                     app:iconPadding="8dp"
                     app:iconSize="18dp"

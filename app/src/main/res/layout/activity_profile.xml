@@ -114,10 +114,10 @@
                     android:paddingBottom="16dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:background="@drawable/bg_circle_solid"
-                        android:backgroundTint="#008994"
+                        android:backgroundTint="#3400958A"
                         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
                         app:srcCompat="@drawable/ic_avatar_placeholder"
                         app:tint="#043F30" />
@@ -182,10 +182,10 @@
                     android:paddingBottom="16dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:background="@drawable/bg_circle_solid"
-                        android:backgroundTint="#008994"
+                        android:backgroundTint="#3400958A"
                         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
                         app:srcCompat="@drawable/ic_email"
                         app:tint="#043F30" />
@@ -250,10 +250,10 @@
                     android:paddingBottom="16dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:background="@drawable/bg_circle_solid"
-                        android:backgroundTint="#008994"
+                        android:backgroundTint="#3400958A"
                         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
                         app:srcCompat="@drawable/ic_lock"
                         app:tint="#043F30" />
